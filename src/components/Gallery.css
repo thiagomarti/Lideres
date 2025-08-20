@@ -51,8 +51,8 @@
 }
 
 .gallery-card {
-  min-width: clamp(140px, 45vw, 250px); /* nunca menos de 140px ni más de 250px */
-  flex: 0 0 auto;
+  flex: 0 0 80%; /* en móviles cada card ocupa 80% del ancho de la pantalla */
+  max-width: 300px; /* nunca más grande de 300px */
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -67,7 +67,8 @@
 
 .gallery-image {
   width: 100%;
-  aspect-ratio: 4/3;
+  height: auto;      /* se adapta al ancho sin deformarse */
+  aspect-ratio: 4/3; /* mantiene proporción tipo foto */
   object-fit: cover;
   display: block;
 }
