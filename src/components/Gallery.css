@@ -1,0 +1,97 @@
+.gallery {
+  background: #f8fafc;
+  color: #1e293b;
+  margin-top: 100px;
+}
+
+.section-title {
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.gallery-section {
+  margin-bottom: 48px;
+}
+
+.gallery-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1e293b;
+  border-bottom: 2px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.gallery-section-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-behavior: smooth;
+}
+
+.gallery-section-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-section-scroll::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.5);
+  border-radius: 4px;
+}
+
+.gallery-card {
+  min-width: 250px;
+  flex: 0 0 auto;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(37, 99, 235, 0.75);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.gallery-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .gallery-card {
+    min-width: 180px;
+  }
+  .gallery-image {
+    height: 150px;
+  }
+}
