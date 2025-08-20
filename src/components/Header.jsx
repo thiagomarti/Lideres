@@ -44,7 +44,7 @@ const Header = () => {
         <div className="header-content">
 <div className="logo">
   <img
-    src="./img/logo.PNG"
+    src="/src/img/logo.PNG"
     alt="Logo del Curso de Líderes"
     className="logo-image"
   />
