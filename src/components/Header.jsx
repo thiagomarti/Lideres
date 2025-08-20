@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import './Header.css'
-import logo from '../img/logo.PNG';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -45,7 +44,7 @@ const Header = () => {
         <div className="header-content">
 <div className="logo">
   <img
-    src={logo}
+    src="/logo.PNG"
     alt="Logo del Curso de Líderes"
     className="logo-image"
   />
