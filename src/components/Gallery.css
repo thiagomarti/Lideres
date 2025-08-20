@@ -51,7 +51,7 @@
 }
 
 .gallery-card {
-  min-width: 250px;
+  min-width: clamp(140px, 45vw, 250px); /* nunca menos de 140px ni más de 250px */
   flex: 0 0 auto;
   position: relative;
   border-radius: 12px;
