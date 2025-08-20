@@ -42,10 +42,17 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="header-content">
-          <div className="logo">
-            <h2>Curso de Líderes</h2>
-            <span>Colegio Siglo 21</span>
-          </div>
+<div className="logo">
+  <img
+    src="../src/img/logo.PNG"
+    alt="Logo del Curso de Líderes"
+    className="logo-image"
+  />
+  <div className="logo-text">
+    <h2>Curso de Líderes</h2>
+    <span>Colegio Siglo 21</span>
+  </div>
+</div>
 
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             {navItems.map((item) =>

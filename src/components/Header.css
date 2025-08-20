@@ -21,18 +21,26 @@
   padding: 16px 0;
 }
 
-.logo h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0;
-  line-height: 1.2;
+.logo {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  gap: 10px; /* espacio entre imagen y texto */
 }
 
-.logo span {
-  font-size: 14px;
-  color: #8095b4;
-  font-weight: 400;
+.logo-image {
+  width: 60px;  /* ajustá el tamaño según necesites */
+  height: auto;
+}
+
+.logo-text h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.logo-text span {
+  font-size: 0.9rem;
+  color: gray;
 }
 
 .nav {
