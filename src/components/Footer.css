@@ -71,10 +71,45 @@
 @media (max-width: 768px) {
   .footer-columns {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* centra en mobile */
+    text-align: center;  /* centra texto también */
+    gap: 24px;           /* más aire entre columnas */
+  }
+
+  .footer-left, 
+  .footer-right {
+    flex: 1 1 100%;
   }
 
   .footer-title {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .footer-description {
+    font-size: 14px;
+  }
+
+  .footer-contact {
+    font-size: 14px;
+    gap: 16px;
+  }
+
+  .contact-item {
+    justify-content: center; /* íconos y texto centrados */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 1rem 16px; /* menos padding en móviles chicos */
+  }
+
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-description,
+  .footer-contact {
+    font-size: 13px;
   }
 }
