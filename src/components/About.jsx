@@ -5,22 +5,22 @@ import './About.css'
 const About = () => {
   const features = [
     {
-      icon: <Target className="feature-icon" />,
+      icon: <Target className="feature-icon1" />,
       title: "Propósito Claro",
       description: "Formar jóvenes comprometidos con el servicio a la comunidad y el crecimiento personal."
     },
     {
-      icon: <Users className="feature-icon" />,
+      icon: <Users className="feature-icon2" />,
       title: "Trabajo en Equipo",
       description: "Estudiantes de 4°, 5° y 6° de secundaria trabajando juntos por objetivos comunes."
     },
     {
-      icon: <Heart className="feature-icon" />,
+      icon: <Heart className="feature-icon3" />,
       title: "Impacto Social",
       description: "Actividades que generan un cambio positivo en nuestra comunidad educativa y social."
     },
     {
-      icon: <UserStar className="feature-icon" />,
+      icon: <UserStar className="feature-icon4" />,
       title: "Desarrollo Personal",
       description: "Un espacio para reflexionar, crecer y desarrollar habilidades de liderazgo."
     }

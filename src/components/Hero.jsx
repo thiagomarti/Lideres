@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heart, Users, Star } from 'lucide-react'
+import { Heart, Users, HandHeart } from 'lucide-react'
 import './Hero.css'
 
 const Hero = () => {
@@ -21,16 +21,16 @@ const Hero = () => {
             </p>
             <div className="hero-icons">
               <div className="icon-item">
-                <Heart className="icon" />
+                <Heart className="icon"/>
                 <span>Solidaridad</span>
               </div>
               <div className="icon-item">
-                <Users className="icon" />
+                <Users className="icon"/>
                 <span>Compañerismo</span>
               </div>
               <div className="icon-item">
-                <Star className="icon" />
-                <span>Excelencia</span>
+                <HandHeart className="icon" />
+                <span>Humanidad</span>
               </div>
             </div>
           </div>

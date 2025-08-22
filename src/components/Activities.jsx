@@ -16,31 +16,31 @@ const Activities = () => {
       icon: <Tent className="activity-icon" />,
       title: "Acompañamiento en Campamentos",
       description: "Nuetra actividad principal es ayudar en campamentos de 1° de primaria a 3° de secundaria, aportando energía juvenil y compañía.",
-      color: "#10b981"
+      color: "#c3ce06"
     },
     {
       icon: <Heart className="activity-icon" />,
       title: "Actividades Solidarias",
       description: "Salidas para ayudar en comedores comunitarios, pintar espacios públicos y compartir momentos especiales con la comunidad.",
-      color: "#ef4444"
+      color: "#e0216c"
     },
     {
       icon: <Laptop className="activity-icon" />,
       title: "Apoyo a Adultos Mayores",
       description: "Jornadas en La Torcaza enseñando a adultos mayores el uso de nuevas tecnologías.",
-      color: "#3b82f6"
+      color: "#3eb9ef"
     },
     {
       icon: <Gamepad2 className="activity-icon" />,
       title: "Día del Niño",
       description: "Jornadas especiales en el colegio con juegos y actividades para que los estudiantes de primaria disfruten su día.",
-      color: "#f59e0b"
+      color: "#f2aa11"
     },
     {
       icon: <Mountain className="activity-icon" />,
       title: "Campamento de Líderes",
       description: "Al final del año, nuestro propio campamento exclusivo para fortalecer vínculos y reflexionar sobre las experiencias vividas.",
-      color: "#8b5cf6"
+      color: "#604097"
     },
   ]
 

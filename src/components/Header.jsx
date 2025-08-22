@@ -32,10 +32,10 @@ const Header = () => {
   }
 
   const navItems = [
-    { href: 'inicio', label: 'Inicio', external: true },
-    { href: 'sobre-nosotros', label: 'Sobre Nosotros', external: true },
-    { href: 'actividades', label: 'Actividades', external: true },
-    { href: '/galeria', label: 'Galería', external: false }
+    { href: 'inicio', label: 'Inicio', external: true, category: "nav-link link1"},
+    { href: 'sobre-nosotros', label: 'Sobre Nosotros', external: true, category: "nav-link link2" },
+    { href: 'actividades', label: 'Actividades', external: true, category: "nav-link link3" },
+    { href: '/galeria', label: 'Galería', external: false, category: "nav-link link4" }
   ]
 
   return (
@@ -44,6 +44,11 @@ const Header = () => {
         <div className="header-content">
 <div className="logo">
   <img
+    src="/siglo.png"
+    alt="Logo del Curso de Líderes"
+    className="logo-image2"
+  />
+    <img
     src="/logo.PNG"
     alt="Logo del Curso de Líderes"
     className="logo-image"
@@ -59,7 +64,7 @@ const Header = () => {
               item.external ? (
                 <button
                   key={item.href}
-                  className="nav-link"
+                  className={item.category}
                   onClick={() => {
                     scrollToSection(item.href)
                     setIsMenuOpen(false)
@@ -71,7 +76,7 @@ const Header = () => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="nav-link"
+                  className={item.category}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}

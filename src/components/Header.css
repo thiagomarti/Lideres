@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #122549;
+  background: #ffffff;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -32,10 +32,15 @@
   height: auto;
 }
 
+.logo-image2 {
+  width: 90px;  /* ajustá el tamaño según necesites */
+  height: auto;
+}
+
 .logo-text h2 {
   margin: 0;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 .logo-text span {
@@ -49,20 +54,33 @@
   align-items: center;
 }
 
+.link1:hover {
+  color: #e2216c;
+}
+
+.link2:hover {
+  color: #39baec;
+}
+
+.link3:hover {
+  color: #f3ab14;
+}
+
+.link4:hover {
+  color: #bfca02;
+}
+
 .nav-link {
   text-decoration: none;
   background-color: #ffffff00;
   border-color: #ffffff00;
-  color: #ffffff;
+  color: #000000;
   font-weight: 500;
   font-size: 15px;
   transition: all 0.2s ease;
   position: relative;
 }
 
-.nav-link:hover {
-  color: #2563eb;
-}
 
 .nav-link::after {
   content: '';
@@ -71,7 +89,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #2563eb;
+  background: #000000;
   transition: width 0.2s ease;
 }
 
@@ -105,7 +123,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #122549;
+    background: #ffffff;
     flex-direction: column;
     padding: 24px;
     gap: 16px;

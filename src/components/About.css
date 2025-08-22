@@ -41,8 +41,29 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-.feature-icon {
-  color: #2563eb;
+.feature-icon1 {
+  color: #e5226e;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.feature-icon2 {
+  color: #3cbaec;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.feature-icon3 {
+  color: #f0ac16;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.feature-icon4 {
+  color: #c6d20b;
   width: 48px;
   height: 48px;
   margin-bottom: 16px;
