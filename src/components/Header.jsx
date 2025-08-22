@@ -32,7 +32,7 @@ const Header = () => {
   }
 
   const navItems = [
-    { href: 'inicio', label: 'Inicio', external: true, category: "nav-link link1"},
+    { href: 'inicio', label: 'Inicio', external: true, category: "nav-link link1" },
     { href: 'sobre-nosotros', label: 'Sobre Nosotros', external: true, category: "nav-link link2" },
     { href: 'actividades', label: 'Actividades', external: true, category: "nav-link link3" },
     { href: '/galeria', label: 'Galería', external: false, category: "nav-link link4" }
@@ -42,22 +42,22 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="header-content">
-<div className="logo">
-  <img
-    src="/siglo.png"
-    alt="Logo del Curso de Líderes"
-    className="logo-image2"
-  />
-    <img
-    src="/logo.PNG"
-    alt="Logo del Curso de Líderes"
-    className="logo-image"
-  />
-  <div className="logo-text">
-    <h2>Curso de Líderes</h2>
-    <span>Colegio Siglo 21</span>
-  </div>
-</div>
+          <div className="logo">
+            <img
+              src="/img/siglo.png"
+              alt=""
+              className="logo-image2"
+            />
+            <img
+              src="/img/logo.PNG"
+              alt=""
+              className="logo-image"
+            />
+            <div className="logo-text">
+              <h2>Curso de Líderes</h2>
+              <span>Colegio Siglo 21</span>
+            </div>
+          </div>
 
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             {navItems.map((item) =>
@@ -77,7 +77,10 @@ const Header = () => {
                   key={item.href}
                   to={item.href}
                   className={item.category}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false)
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }}
                 >
                   {item.label}
                 </Link>
