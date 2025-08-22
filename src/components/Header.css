@@ -33,7 +33,7 @@
 }
 
 .logo-image2 {
-  width: 90px;  /* ajustá el tamaño según necesites */
+  width: 75px;  /* ajustá el tamaño según necesites */
   height: auto;
 }
 
@@ -117,6 +117,14 @@
   .menu-toggle {
     display: block;
   }
+
+  .logo-text h2 {
+  display: none;
+}
+
+.logo-text span {
+  display: none;
+}
 
   .nav {
     position: absolute;
